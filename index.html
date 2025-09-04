@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Cream Parlor Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+    }
+    header {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 24px;
+    }
+    nav {
+      width: 200px;
+      background: #343a40;
+      color: white;
+      position: fixed;
+      top: 60px;
+      bottom: 0;
+      padding-top: 20px;
+    }
+    nav a {
+      display: block;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #ff6f61;
+    }
+    main {
+      margin-left: 200px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      display: inline-block;
+      width: 200px;
+      text-align: center;
+    }
+    .btn {
+      background: #ff6f61;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: #e85a50;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🍨 Ice Cream Parlor Dashboard
+  </header>
+  <nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Menu</a>
+    <a href="#">Orders</a>
+    <a href="#">Customers</a>
+    <a href="#">Settings</a>
+  </nav>
+  <main>
+    <h2>Welcome to Ice Cream Parlor</h2>
+    <div class="card">
+      <h3>🍦 Vanilla</h3>
+      <p>Classic and creamy vanilla flavor</p>
+      <button class="btn" onclick="order('Vanilla')">Order</button>
+    </div>
+    <div class="card">
+      <h3>🍫 Chocolate</h3>
+      <p>Rich and delightful chocolate</p>
+      <button class="btn" onclick="order('Chocolate')">Order</button>
+    </div>
+    <div class="card">
+      <h3>🍓 Strawberry</h3>
+      <p>Fresh and fruity strawberry</p>
+      <button class="btn" onclick="order('Strawberry')">Order</button>
+    </div>
+  </main>
+  <script>
+    function order(flavor) {
+      alert("You ordered " + flavor + " ice cream! 🍨");
+    }
+  </script>
+</body>
+</html>
